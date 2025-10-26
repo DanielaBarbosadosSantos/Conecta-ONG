@@ -85,25 +85,30 @@
 
                     <label for="valor">Valor da Doação (R$):</label>
                     <input type="number" id="valor" name="valor" min="10" required>
+                    <span class="error-message" id="error-valor"></span>
 
                     <label for="causa">Para qual causa você gostaria de doar?</label>
                     <select id="causa" name="causa" required>
-                        <option value="geral">Escolha uma Causa</option>
+                        <option value="">Escolha uma Causa</option> 
                         <option value="educacao">Educação</option>
                         <option value="saude">Saúde</option>
                         <option value="meio-ambiente">Meio Ambiente</option>
                         <option value="protecao-animal">Proteção Animal</option>
                     </select>
+                    <span class="error-message" id="error-causa"></span>
                 </fieldset>
 
                 <fieldset>
                     <legend>Informações de Pagamento (Formulário Simulado)</legend>
                     <p>Esta seção será mais detalhada nas próximas etapas do projeto.</p>
+                    
                     <label for="nome-cartao">Nome no Cartão:</label>
                     <input type="text" id="nome-cartao" name="nome-cartao" required>
+                    <span class="error-message" id="error-nome-cartao"></span>
 
                     <label for="numero-cartao">Número do Cartão:</label>
                     <input type="text" id="numero-cartao" name="numero-cartao" required>
+                    <span class="error-message" id="error-numero-cartao"></span>
                 </fieldset>
 
                 <button type="submit">Finalizar Doação</button>
@@ -122,9 +127,11 @@
             <span class="close-modal-btn" style="position: absolute; top: 10px; right: 20px; font-size: 20px; cursor: pointer;">&times;</span>
             <h3>Doação Concluída com Sucesso!</h3>
             <p>Sua generosidade fará a diferença na vida de muitas pessoas. Acompanhe o impacto da sua doação em nosso blog.</p>
-            <button onclick="document.getElementById('cadastro-sucesso-modal').classList.remove('is-open')" class="button" style="margin-top: 20px;">Obrigado!</button>
+            <button class="button close-modal-btn" style="margin-top: 20px;">Obrigado!</button>
         </div>
     </div>
-    <script src="assets/js/script.js"></script>
+    
+    <script type="module" src="assets/js/main.js"></script>
+
 </body>
 </html>

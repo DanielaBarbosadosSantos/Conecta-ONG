@@ -15,7 +15,6 @@
     display: flex;
 }
 
-/* --- Conteúdo do Modal --- */
 .modal-content {
     background: var(--neutral-100);
     padding: var(--spacing-4);
@@ -33,7 +32,6 @@
     margin-bottom: var(--spacing-2);
 }
 
-/* --- Alerta / Toast (Flutuante) --- */
 .toast-alert {
     position: fixed;
     top: var(--spacing-4);

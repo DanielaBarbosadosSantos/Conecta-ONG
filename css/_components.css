@@ -259,6 +259,7 @@ header nav ul li a.active {
     background-color: #8B0000; 
 }
 
+
 @media (max-width: 768px) {
     .hamburger-button {
         display: block; 
