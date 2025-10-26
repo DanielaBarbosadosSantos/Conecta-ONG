@@ -13,13 +13,26 @@
     <header>
         <nav>
             <ul>
+                <button class="hamburger-button" aria-controls="main-menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <a href="index.html" class="logo-link">
-            <img src="Logo Conecta ONG.png" alt="Logo do Conecta ONG">
-        </a>
+                    <img src="Logo Conecta ONG.png" alt="Logo do Conecta ONG">
+                </a>
+                
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sobre.html">Sobre a Plataforma</a></li>
-                <li><a href="ongs.html">ONGs Cadastradas</a></li>
-                <li><a href="projetos.html">Projetos em Destaque</a></li>
+                
+                <li class="has-dropdown">
+                    <a href="ongs.html">ONGs e Projetos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ongs.html">ONGs Cadastradas</a></li>
+                        <li><a href="projetos.html">Projetos em Destaque</a></li>
+                    </ul>
+                </li>
+                
                 <li><a href="voluntariado.html"class="active">Oportunidades</a></li>
                 <li><a href="doacoes.html">Doações</a></li>
                 <li><a href="contato.html">Contato</a></li>
@@ -98,5 +111,7 @@
         <p>Desenvolvido com o propósito de fortalecer o Terceiro Setor no Brasil.</p>
     </footer>
 
+    <script src="assets/js/script.js"></script>
+    
 </body>
 </html>
