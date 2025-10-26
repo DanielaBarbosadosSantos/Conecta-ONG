@@ -13,72 +13,76 @@
     <header>
         <nav>
             <ul>
+                <button class="hamburger-button" aria-controls="main-menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <li><a href="index.html" class="logo-link">
                     <img src="Logo Conecta ONG.png" alt="Logo do Conecta ONG">
                 </a></li>
+                
                 <li><a href="index.html" class="active">Início</a></li>
                 <li><a href="sobre.html">Sobre a Plataforma</a></li>
-                <li><a href="ongs.html">ONGs Cadastradas</a></li>
-                <li><a href="projetos.html">Projetos em Destaque</a></li>
+                
+                <li class="has-dropdown">
+                    <a href="ongs.html">ONGs e Projetos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ongs.html">ONGs Cadastradas</a></li>
+                        <li><a href="projetos.html">Projetos em Destaque</a></li>
+                    </ul>
+                </li>
+                
                 <li><a href="voluntariado.html">Oportunidades</a></li>
                 <li><a href="doacoes.html">Doações</a></li>
                 <li><a href="contato.html">Contato</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="cadastro.html">Cadastre-se</a></li>
+                <li><a href="cadastro.html" class="button">Cadastre-se</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-
-        <section>
-            <h1>Conectando causas, transformando vidas.</h1>
-            <p>Seja parte da maior plataforma de apoio ao Terceiro Setor do Brasil. Descubra projetos, doe, voluntarie-se ou cadastre sua ONG.</p>
-            <a href="ongs.html" class="button">Explore as ONGs</a>
-            <a href="cadastro.html" class="button">Cadastre sua ONG</a>
-        </section>
-
-        <section>
-            <h2>Nosso Impacto em Números</h2>
-            <p>Juntos, já ajudamos a transformar vidas por meio de...</p>
-            <div class="cards-impacto"> <article>
-                    <h3>500+ ONGs Cadastradas</h3>
-                    <p>ONGs que levam esperança e transformação a comunidades por todo o Brasil.</p>
-                </article>
-                <article>
-                    <h3>10.000+ Voluntários Ativos</h3>
-                    <p>Pessoas engajadas e prontas para fazer a diferença em projetos que importam.</p>
-                </article>
-                <article>
-                    <h3>R$ 1M+ em Doações</h3>
-                    <p>Recursos direcionados para projetos que geram um impacto social real e duradouro.</p>
-                </article>
+    <main class="container main-content">
+        <section class="hero-banner">
+            <h1>Conectando Você à Causa que Transforma.</h1>
+            <p>Encontre a ONG ideal para doar ou ser voluntário e comece a fazer a diferença hoje.</p>
+            <div style="margin-top: 20px;">
+                <a href="voluntariado.html" class="button">Quero ser Voluntário</a>
+                <a href="doacoes.html" class="button doacao-destaque" style="margin-left: 15px;">Quero Doar</a>
             </div>
+            <img src="Pessoas voluntariando em diversas atividades em um ambiente colorido e colaborativo.jpg" alt="Pessoas voluntariando em diversas atividades em um ambiente colorido e colaborativo." class="single-image" style="max-width: 100%; margin-top: 30px;">
         </section>
 
         <section>
-            <h2>Inspire-se com Nossos Projetos</h2>
-            <div class="secao-projetos-imagens"> <article>
-                    <h3>Meio Ambiente</h3>
+            <h2>O que é a Conecta ONG?</h2>
+            <p>Somos uma plataforma que simplifica a conexão entre a sociedade e o Terceiro Setor. Verificamos a credibilidade das ONGs e facilitamos a busca por oportunidades de voluntariado e campanhas de doação que realmente geram impacto social.</p>
+            <a href="sobre.html" class="button">Saiba Mais Sobre Nós</a>
+        </section>
+
+        <section>
+            <h2>Projetos com Grande Impacto</h2>
+            <div class="gallery-container">
+                <article class="gallery-item card">
                     <a href="projetos.html">
-                        <img src="Voluntários plantando árvores em uma área verde.jpg" alt="Voluntários plantando árvores em uma área verde">
+                        <img src="Crianças estudando em uma sala de aula com tablets.jpg" alt="Crianças estudando em uma sala de aula com tablets.">
                     </a>
-                    <p>Descubra como restauramos a natureza e garantimos um futuro mais verde para todos.</p>
+                    <h3>Educação para o Futuro</h3>
+                    <p>Invista em aulas de reforço e oficinas profissionalizantes para jovens carentes.</p>
                 </article>
-                
-                <article>
-                    <h3>Educação</h3>
+
+                <article class="gallery-item card">
                     <a href="projetos.html">
-                        <img src="Crianças estudando em uma sala de aula com tablets.jpg" alt="Crianças estudando em uma sala de aula com tablets">
+                        <img src="Voluntários plantando árvores em uma área verde.jpg" alt="Voluntários plantando árvores em uma área verde.">
                     </a>
-                    <p>Apoie a educação e ajude a construir um futuro melhor, uma criança de cada vez.</p>
+                    <h3>Reflorestamento Urbano</h3>
+                    <p>Ajude a revitalizar parques e áreas verdes na sua cidade, combatendo a poluição.</p>
                 </article>
-                
-                <article>
-                    <h3>Saúde Comunitária</h3>
+
+                <article class="gallery-item card">
                     <a href="projetos.html">
                         <img src="Médicos voluntários atendendo pacientes em uma comunidade.jpg" alt="Médicos voluntários atendendo pacientes em uma comunidade">
                     </a>
+                    <h3>Saúde Comunitária</h3>
                     <p>Leve saúde e dignidade para quem mais precisa com nossos projetos comunitários.</p>
                 </article>
             </div>
@@ -86,7 +90,8 @@
 
         <section>
             <h2>Junte-se a Nós e Faça a Diferença!</h2>
-            <div style="text-align: center; display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 0 auto;"> <div>
+            <div style="text-align: center; display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 0 auto;"> 
+                <div>
                     <h3>Para ONGs</h3>
                     <p>Amplie seu alcance, encontre voluntários e capte recursos de forma eficiente.</p>
                     <a href="cadastro.html" class="button">Cadastre sua ONG</a>
@@ -105,6 +110,15 @@
         <p>&copy; 2025 Conecta ONG. Todos os direitos reservados.</p>
         <p>Desenvolvido com o propósito de fortalecer o Terceiro Setor no Brasil.</p>
     </footer>
-
+    
+    <div id="cadastro-sucesso-modal" class="modal-overlay" aria-modal="true" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <span class="close-modal-btn" style="position: absolute; top: 10px; right: 20px; font-size: 20px; cursor: pointer;">&times;</span>
+            <h3>Mensagem Importante</h3>
+            <p>Esta é uma demonstração de um componente de feedback (Modal) que será acionado após uma interação.</p>
+            <button onclick="document.getElementById('cadastro-sucesso-modal').classList.remove('is-open')" class="button" style="margin-top: 20px;">Entendido</button>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
