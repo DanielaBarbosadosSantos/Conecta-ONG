@@ -1,4 +1,3 @@
-/* Layout Principal e Estrutura */
 body {
     background-color: var(--neutral-300);
     color: var(--neutral-900);
@@ -27,14 +26,12 @@ section {
     box-shadow: var(--box-shadow-md);
 }
 
-/* Sistema de Grid de 12 Colunas com CSS Grid */
 .grid-12-columns {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: var(--spacing-3);
 }
 
-/* Flexbox para alinhamentos internos */
 .flex-container {
     display: flex;
     justify-content: center;
@@ -43,9 +40,6 @@ section {
     flex-wrap: wrap;
 }
 
-/* --- Media Queries (Breakpoints) --- */
-
-/* 1. Celulares (max-width: 480px) */
 @media (max-width: 480px) {
     body {
         font-size: var(--font-size-sm);
@@ -63,14 +57,12 @@ section {
     }
 }
 
-/* 2. Tablets (max-width: 768px) */
 @media (max-width: 768px) {
-    /* Menu Hambúrguer - A lógica de JS precisa ser adicionada */
     .menu-hamburguer {
         display: block;
     }
     .nav-menu {
-        display: none; /* Esconde o menu na vertical */
+        display: none; 
     }
     .nav-menu.is-open {
         display: flex;
@@ -78,23 +70,16 @@ section {
         width: 100%;
     }
 
-    /* Outras alterações de layout */
     .grid-12-columns {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* 3. Laptops (min-width: 1024px) */
 @media (min-width: 1024px) {
-    /* Layout padrão */
 }
 
-/* 4. Telas grandes (min-width: 1200px) */
 @media (min-width: 1200px) {
-    /* Layout para telas maiores */
 }
 
-/* 5. Telas extra grandes (min-width: 1440px) */
 @media (min-width: 1440px) {
-    /* Layout para telas extra grandes */
 }

@@ -42,7 +42,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main-content container">
 
         <section>
             <h1>Projetos Sociais</h1>
@@ -131,16 +131,16 @@
         <p>Desenvolvido com o propósito de fortalecer o Terceiro Setor no Brasil.</p>
     </footer>
 
-    <div id="feedback-modal" class="modal-overlay" aria-modal="true" role="dialog" aria-hidden="true">
+    <div id="cadastro-sucesso-modal" class="modal-overlay" aria-modal="true" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <span class="close-modal-btn" style="position: absolute; top: 10px; right: 20px; font-size: 20px; cursor: pointer;">&times;</span>
             <h3>Informação de Projeto</h3>
             <p>Este é um componente de feedback (Modal) que pode ser usado para exibir detalhes do projeto, ou após uma ação de doação/voluntariado.</p>
-            <button onclick="document.getElementById('feedback-modal').classList.remove('is-open')" class="button" style="margin-top: 20px;">Entendido</button>
+            <button class="button close-modal-btn" style="margin-top: 20px;">Entendido</button>
         </div>
     </div>
     
-    <script src="assets/js/script.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
     
 </body>
 </html>

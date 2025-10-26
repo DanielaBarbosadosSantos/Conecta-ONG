@@ -464,6 +464,7 @@ footer {
     margin-bottom: 10px;
 }
 
+/* Media Query para telas menores (smartphones) */
 @media (max-width: 768px) {
     .gallery-item {
         flex-basis: 100%;

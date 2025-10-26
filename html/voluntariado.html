@@ -42,7 +42,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main-content container">
 
         <section>
             <h1>Oportunidades de Voluntariado</h1>
@@ -64,7 +64,7 @@
         <section>
     
             <h2>Vagas em Aberto</h2>
-    <div class="gallery-container">
+            <div class="gallery-container"> 
                 <article class="gallery-item">
                     <img src="Instrutor ensinando um grupo de alunos em computadores..jpg" alt="Instrutor ensinando um grupo de alunos em computadores.">
                     <h3>Instrutor de Informática</h3>
@@ -111,7 +111,16 @@
         <p>Desenvolvido com o propósito de fortalecer o Terceiro Setor no Brasil.</p>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <div id="cadastro-sucesso-modal" class="modal-overlay" aria-modal="true" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <span class="close-modal-btn" style="position: absolute; top: 10px; right: 20px; font-size: 20px; cursor: pointer;">&times;</span>
+            <h3>Mensagem Importante</h3>
+            <p>Este é um componente de feedback (Modal) para demonstrar a conformidade com as especificações técnicas.</p>
+            <button class="button close-modal-btn" style="margin-top: 20px;">Fechar</button>
+        </div>
+    </div>
+
+    <script type="module" src="assets/js/main.js"></script>
     
 </body>
 </html>
